@@ -87,8 +87,8 @@ function Navbar() {
             <ul className="menu menu-horizontal px-1">{navitem}</ul>
           </div>
           <div className="hidden md:block">
-            <label className="px-3 py-2  rounded-md flex items-center gap-2">
-              <input type="text" className="grow outline-none " placeholder="Search" />
+            <label className="px-3 py-2  rounded-md flex items-center gap-2 border ">
+              <input  type="text" className="grow outline-none " placeholder="Search" />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"

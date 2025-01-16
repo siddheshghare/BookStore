@@ -1,6 +1,7 @@
 import React from 'react'
 import list1 from "../../public/list.json"
 import Cards from './Cards'
+import { Link } from 'react-router-dom'
 
 function Course() {
     return (
@@ -13,12 +14,15 @@ function Course() {
                     <p className="mt-6">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sint illo placeat error dolorum ipsum suscipit minus maiores enim et laborum exercitationem maxime quidem dignissimos, est sequi voluptas libero magni earum quod incidunt obcaecati, facere tempore voluptate! Corrupti, eaque error.
                     </p>
-                    <button className="bg-pink-500 rounded-md hover:bg-pink-900 duration-200 mt-5 text-white py-1 px-3">back</button>
+                    <Link to="/">
+                        <button className="bg-pink-500 rounded-md hover:bg-pink-900 duration-200 mt-5 text-white py-1 px-3">
+                            back</button>
+                    </Link>
                 </div>
-                <div>
+                <div className="mt-12 grid grid-cols-1 md:grid-cols-4 ">
                     {
-                        list1.map((item)=>{
-                            return <Cards item={item} key={item.id}/>
+                        list1.map((item) => {
+                            return <Cards item={item} key={item.id} />
                         })
                     }
 
