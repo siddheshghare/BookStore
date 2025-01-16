@@ -33,10 +33,10 @@ function Navbar() {
   const navitem = (
     <>
       <li>
-        <a>Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
-        <a>Course</a>
+        <a href="/course">Course</a>
       </li>
       <li>
         <a>Contact</a>

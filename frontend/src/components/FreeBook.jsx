@@ -9,7 +9,7 @@ function FreeBook() {
 
 
     const filteredData = list.filter((data) => data.category === "free")
-    console.log(filteredData);
+    
 
 
     var settings = {
