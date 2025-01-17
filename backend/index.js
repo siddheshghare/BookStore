@@ -6,6 +6,8 @@ import cors from "cors"
 import dotenv from"dotenv"
 dotenv.config();
 
+app.use(express.json())
+
 app.use(cors())
 
 const port = process.env.PORT || 4000
@@ -26,6 +28,11 @@ try {
 
 
 import bookRoute from "./route/book.route.js"
+import userRouter from "./route/user.route.js"
+
+
+
+app.use("/user",userRouter)
 app.use("/book",bookRoute)
 
 app.listen(port, () => {
